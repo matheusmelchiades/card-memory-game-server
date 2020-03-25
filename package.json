@@ -4,6 +4,21 @@
   "main": "index.js",
   "repository": "git@github.com:matheusmelchiades/template-server-hapi.git",
   "author": "matheusmelchiades <matheusmacielmelchiades@hotmail.com>",
+  "collaborators": [
+    {
+      "name": "Pedro Adami Ullmann",
+      "username": "pedroullmann"
+    },
+    {
+      "name": "Vinicius Linck",
+      "username": "ViniciusLinck"
+    },
+    {
+      "name": "Wellisson Bastos",
+      "username": "Wellisson-Bastos",
+      "email": "wellisson.bastos@outlook.com"
+    }
+  ],
   "license": "MIT",
   "scripts": {
     "start": "node server.js",

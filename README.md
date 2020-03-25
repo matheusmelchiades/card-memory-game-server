@@ -1,17 +1,9 @@
-# template-server-hapi
-
-Hapi.js
+# Card-memory-game-server
 
 ## Tecnologias
 
 * [Hapi](https://hapi.dev/) - Framework server
 * [Node](https://nodejs.org/en/) - Runtime builder
-
-## Enviroments
-
-* development
-* homolog
-* production
 
 ## Configuração
 

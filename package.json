@@ -1,8 +1,8 @@
 {
-  "name": "template-server-hapi",
+  "name": "card-memory-game",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:matheusmelchiades/template-server-hapi.git",
+  "repository": "git@github.com:matheusmelchiades/card-memory-game.git",
   "author": "matheusmelchiades <matheusmacielmelchiades@hotmail.com>",
   "collaborators": [
     {

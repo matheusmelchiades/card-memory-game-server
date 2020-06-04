@@ -6,14 +6,14 @@ module.exports.registerUser = async user => {
     user.losses = 0;
     user.perfil = 'J';
 
-    var userDb = await dao.getUserByUsername(user.username);
+    let userDb = await dao.getUserByUsername(user.username);
 
     if (userDb) {
         if (userDb.password === user.password) {
             return userDb;
-        } else {
-            return { 'message': 'Usu·rio e/ou senha incorretos.' }
-        };
+        }
+
+        return { 'message': 'Usu√°rio e/ou senha incorretos.' };
     }
 
     userDb = await dao.registerUser(user);

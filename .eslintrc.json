@@ -72,7 +72,12 @@
             "error",
             "property"
         ],
-        "dot-notation": "error",
+        "dot-notation": [
+            "error",
+            {
+                "allowKeywords": true
+            }
+        ],
         "eol-last": "error",
         "eqeqeq": "error",
         "func-call-spacing": "error",
@@ -82,11 +87,15 @@
             "error",
             "declaration"
         ],
+        "function-call-argument-newline": [
+            "error",
+            "consistent"
+        ],
         "function-paren-newline": "error",
         "generator-star-spacing": "error",
         "global-require": "error",
         "grouped-accessor-pairs": "error",
-        "guard-for-in": "error",
+        "guard-for-in": "off",
         "handle-callback-err": "error",
         "id-blacklist": "error",
         "id-length": "off",
@@ -219,6 +228,7 @@
         "no-unmodified-loop-condition": "error",
         "no-unneeded-ternary": "error",
         "no-unused-expressions": "error",
+        "no-unused-vars": ["error", { "ignoreRestSiblings": true }],
         "no-use-before-define": "off",
         "no-useless-call": "error",
         "no-useless-computed-key": "error",

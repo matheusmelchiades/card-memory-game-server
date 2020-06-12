@@ -4,5 +4,5 @@ module.exports.getDifficulties = async () => {
 
     const difficultiesDb = await dao.getDifficulties();
 
-    return difficultiesDb || {};;
+    return difficultiesDb || {};
 };

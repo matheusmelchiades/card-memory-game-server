@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js"></script>
+  </head>
+  <body></body>
+  <script>
+    const data = {
+      users: {
+        a: { _id: '5ed856406997d9d1ebcd4403' },
+        b: { _id: '5ed8564055d179ae6b9263bf' },
+      },
+      game: '5ed8564014527aa8865e82c8',
+    };
+
+    function startGame(user) {
+      socket.emit('startGame', { user: data.users[user] });
+    }
+
+    function online(user) {
+      socket.emit('userOnline', { user: data.users[user] });
+    }
+
+    var socket = io('http://localhost:6978');
+    socket.on('connect', function () {});
+    socket.on('event', function (data) {});
+    socket.on('disconnect', function () {});
+  </script>
+  <!-- [
+    { "_id": {"$oid": "5ed856406997d9d1ebcd4403"} },
+    { "_id": {"$oid": "5ed8564055d179ae6b9263bf"} }
+  ] -->
+</html>
